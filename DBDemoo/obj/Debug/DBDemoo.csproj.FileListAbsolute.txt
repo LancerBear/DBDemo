@@ -1,0 +1,6 @@
+G:\VS\Projects\DBDemoo\DBDemoo\bin\DBDemoo.dll.config
+G:\VS\Projects\DBDemoo\DBDemoo\bin\DBDemoo.dll
+G:\VS\Projects\DBDemoo\DBDemoo\bin\DBDemoo.pdb
+G:\VS\Projects\DBDemoo\DBDemoo\obj\Debug\DBDemoo.csprojResolveAssemblyReference.cache
+G:\VS\Projects\DBDemoo\DBDemoo\obj\Debug\DBDemoo.dll
+G:\VS\Projects\DBDemoo\DBDemoo\obj\Debug\DBDemoo.pdb
