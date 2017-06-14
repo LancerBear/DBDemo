@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using DBDemo.DataEntity;
 using System.Text;
 using System.Security.Cryptography;
+using DBDemo;
 
 namespace DBDemo.Acount
 {
@@ -14,7 +15,10 @@ namespace DBDemo.Acount
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
+			if (Session["ID"] != null)
+				Master.FindControl("NavBar").Visible = true;
+			else
+				Master.FindControl("NavBar").Visible = false;
 		}
 
 		protected void submit_Click(object sender, EventArgs e)

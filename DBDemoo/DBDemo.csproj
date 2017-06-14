@@ -58,6 +58,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Account\Logout.aspx" />
+    <Content Include="Account\SelCourse.aspx" />
+    <Content Include="Account\StuInfo.aspx" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -81,8 +84,32 @@
     <Compile Include="Account\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Account\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\SelCourse.aspx.cs">
+      <DependentUpon>SelCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\SelCourse.aspx.designer.cs">
+      <DependentUpon>SelCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\StuInfo.aspx.cs">
+      <DependentUpon>StuInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\StuInfo.aspx.designer.cs">
+      <DependentUpon>StuInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DataEntity\EntityBase.cs" />
+    <Compile Include="DataEntity\EntityCour.cs" />
     <Compile Include="DataEntity\EntityPwd.cs" />
+    <Compile Include="DataEntity\EntitySC.cs" />
+    <Compile Include="DataEntity\EntityStu.cs" />
     <Compile Include="DB\DBconnector.cs" />
     <Compile Include="PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>

@@ -12,6 +12,10 @@ namespace DBDemo.Share
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			base.Page_Load(sender, e);
+			if (Session["ID"] != null)
+				Master.FindControl("NavBar").Visible = true;
+			else
+				Master.FindControl("NavBar").Visible = false;
 		}
 	}
 }

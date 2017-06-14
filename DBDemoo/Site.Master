@@ -11,10 +11,19 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <h1 align="center">选课管理系统</h1>
+
+        <div align="center">
+            <h1 >选课管理系统</h1>
+            <div align="right">
+                <asp:Panel ID="NavBar" runat="server">
+                    <a href="../../Account/StuInfo.aspx" ><asp:Label ID="StuInfo" runat="server" Text="个人信息" Width="80px" ></asp:Label></a>
+                    <a href="../../Account/SelCourse.aspx" ><asp:Label ID="Scourse" runat="server" Text="选退课" Width="80px" ></asp:Label></a>
+                    <a href="../../Account/Logout.aspx" ><asp:Label ID="Logout" runat="server" Text="注销" Width="80px" ></asp:Label></a>
+                </asp:Panel>
+            </div>
             <hr />
         </div>
+        
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         

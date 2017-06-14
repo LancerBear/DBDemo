@@ -8,7 +8,7 @@ namespace DBDemo.DataEntity
 {
 	public class EntityBase
 	{
-		virtual public List<EntityBase> readDataSet(MySqlDataReader reader)
+		public virtual List<EntityBase> readDataSet(MySqlDataReader reader)
 		{
 			return null;
 		}
