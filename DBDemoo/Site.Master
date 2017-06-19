@@ -20,6 +20,11 @@
                     <a href="../../Account/SelCourse.aspx" ><asp:Label ID="Scourse" runat="server" Text="选退课" Width="80px" ></asp:Label></a>
                     <a href="../../Account/Logout.aspx" ><asp:Label ID="Logout" runat="server" Text="注销" Width="80px" ></asp:Label></a>
                 </asp:Panel>
+                <asp:Panel ID="AdminBar" runat="server" >
+                    <a href="../../Admin/AddCour.aspx" ><asp:Label ID="Label1" runat="server" Text="新增课程" Width="80px" ></asp:Label></a>
+                    <a href="../../Admin/SetGrade.aspx" ><asp:Label ID="Label2" runat="server" Text="修改成绩" Width="80px" ></asp:Label></a>
+                    <a href="../../Account/Logout.aspx" ><asp:Label ID="Label3" runat="server" Text="注销" Width="80px" ></asp:Label></a>
+                </asp:Panel>
             </div>
             <hr />
         </div>

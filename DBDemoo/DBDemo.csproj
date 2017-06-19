@@ -61,6 +61,9 @@
     <Content Include="Account\Logout.aspx" />
     <Content Include="Account\SelCourse.aspx" />
     <Content Include="Account\StuInfo.aspx" />
+    <Content Include="Admin\AddCour.aspx" />
+    <Content Include="Admin\AdminDefault.aspx" />
+    <Content Include="Admin\SetGrade.aspx" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -104,6 +107,27 @@
     </Compile>
     <Compile Include="Account\StuInfo.aspx.designer.cs">
       <DependentUpon>StuInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddCour.aspx.cs">
+      <DependentUpon>AddCour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddCour.aspx.designer.cs">
+      <DependentUpon>AddCour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminDefault.aspx.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminDefault.aspx.designer.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SetGrade.aspx.cs">
+      <DependentUpon>SetGrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SetGrade.aspx.designer.cs">
+      <DependentUpon>SetGrade.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataEntity\EntityBase.cs" />
     <Compile Include="DataEntity\EntityCour.cs" />

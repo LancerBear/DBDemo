@@ -13,7 +13,8 @@ namespace DBDemo.Account
 		protected override void Page_Load(object sender, EventArgs e)
 		{
 			base.Page_Load(sender, e);
-
+			Master.FindControl("NavBar").Visible = true;
+			Master.FindControl("AdminBar").Visible = false;
 			string sqlSentence = "select * from s where sid = \"" + Session["ID"] + "\"";
 			DBconnetor conn = new DBconnetor(sqlSentence);
 			List<EntityBase> list = conn.getList(new EntityStu());

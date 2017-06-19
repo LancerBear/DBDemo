@@ -38,5 +38,26 @@ namespace DBDemo
 			List<EntityBase> list = entity.readDataSet(reader);
 			return list;
 		}
+
+		public void updata()
+		{
+			try
+			{
+				connection.Open();
+			}
+			catch (Exception)
+			{
+				Console.WriteLine("DB open failed!");
+			}
+			try
+			{
+				command.ExecuteNonQuery();
+			}
+			catch(Exception)
+			{
+
+			}
+			
+		}
 	}
 }
