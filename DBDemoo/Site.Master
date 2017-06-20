@@ -16,13 +16,15 @@
             <h1 >选课管理系统</h1>
             <div align="right">
                 <asp:Panel ID="NavBar" runat="server">
+                    <a href="../../Account/QueryGrade.aspx" ><asp:Label ID="Label5" runat="server" Text="成绩查询" Width="80px" ></asp:Label></a>
                     <a href="../../Account/StuInfo.aspx" ><asp:Label ID="StuInfo" runat="server" Text="个人信息" Width="80px" ></asp:Label></a>
                     <a href="../../Account/SelCourse.aspx" ><asp:Label ID="Scourse" runat="server" Text="选退课" Width="80px" ></asp:Label></a>
                     <a href="../../Account/Logout.aspx" ><asp:Label ID="Logout" runat="server" Text="注销" Width="80px" ></asp:Label></a>
                 </asp:Panel>
                 <asp:Panel ID="AdminBar" runat="server" >
+                    <a href="../../Admin/QueryGrade.aspx" ><asp:Label ID="Label4" runat="server" Text="成绩统计" Width="80px" ></asp:Label></a>
                     <a href="../../Admin/AddCour.aspx" ><asp:Label ID="Label1" runat="server" Text="新增课程" Width="80px" ></asp:Label></a>
-                    <a href="../../Admin/SetGrade.aspx" ><asp:Label ID="Label2" runat="server" Text="修改成绩" Width="80px" ></asp:Label></a>
+                    <a href="../../Admin/SetGrade.aspx" ><asp:Label ID="Label2" runat="server" Text="设置成绩" Width="80px" ></asp:Label></a>
                     <a href="../../Account/Logout.aspx" ><asp:Label ID="Label3" runat="server" Text="注销" Width="80px" ></asp:Label></a>
                 </asp:Panel>
             </div>

@@ -10,7 +10,7 @@ namespace DBDemo.DataEntity
 	{
 		private string sid;
 		private string cno;
-		private int grade;
+		private float grade;
 
 		public string getSid()
 		{
@@ -20,7 +20,7 @@ namespace DBDemo.DataEntity
 		{
 			return this.cno;
 		}
-		public int getGrade()
+		public float getGrade()
 		{
 			return this.grade;
 		}
@@ -33,7 +33,7 @@ namespace DBDemo.DataEntity
 		{
 			this.cno = c;
 		}
-		private void setGrade(int g)
+		private void setGrade(float g)
 		{
 			this.grade = g;
 		}
@@ -51,7 +51,7 @@ namespace DBDemo.DataEntity
 
 						entity.setSid(reader.GetString(0));
 						entity.setCno(reader.GetString(1));
-						entity.setGrade(reader.GetInt16(2));
+						entity.setGrade(reader.GetFloat(2));
 						list.Add(entity);
 					}
 				}

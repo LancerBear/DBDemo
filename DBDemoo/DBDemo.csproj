@@ -59,10 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Logout.aspx" />
+    <Content Include="Account\QueryGrade.aspx" />
     <Content Include="Account\SelCourse.aspx" />
     <Content Include="Account\StuInfo.aspx" />
     <Content Include="Admin\AddCour.aspx" />
     <Content Include="Admin\AdminDefault.aspx" />
+    <Content Include="Admin\QueryGrade.aspx" />
     <Content Include="Admin\SetGrade.aspx" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
@@ -94,6 +96,13 @@
     <Compile Include="Account\Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Account\QueryGrade.aspx.cs">
+      <DependentUpon>QueryGrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\QueryGrade.aspx.designer.cs">
+      <DependentUpon>QueryGrade.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\SelCourse.aspx.cs">
       <DependentUpon>SelCourse.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -121,6 +130,13 @@
     </Compile>
     <Compile Include="Admin\AdminDefault.aspx.designer.cs">
       <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QueryGrade.aspx.cs">
+      <DependentUpon>QueryGrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QueryGrade.aspx.designer.cs">
+      <DependentUpon>QueryGrade.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\SetGrade.aspx.cs">
       <DependentUpon>SetGrade.aspx</DependentUpon>

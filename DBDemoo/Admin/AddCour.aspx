@@ -6,14 +6,9 @@
     <asp:Label ID="Label4" runat="server" Text="已有课程:"></asp:Label>
     <br />
     <asp:CheckBoxList ID="CheckBoxList1" runat="server">
-
+            
     </asp:CheckBoxList>
     <asp:Button ID="cancelCourBt" runat="server" Text="取消课程" OnClick="cancelCourBt_Click" style="height: 21px" />
-
-    <hr />
-
-    <asp:Label ID="Label1" runat="server" Text="课程号:"></asp:Label>
-    <asp:TextBox ID="CnoTB" runat="server"></asp:TextBox>
 
     <hr />
 

@@ -4,11 +4,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <asp:Label ID="Label1" runat="server" Text="学号:"></asp:Label>
-    <asp:TextBox ID="stuIDTB" runat="server"></asp:TextBox>
-
+    <asp:TextBox ID="stuIDTB" runat="server" OnTextChanged="stuIDTB_TextChanged"></asp:TextBox>
+    <asp:Button ID="submitIDBt" runat="server" Text="确认" OnClick="submitIDBt_Click" />
     <hr />
-    <asp:Label ID="Label2" runat="server" Text="课程号:"></asp:Label>
-    <asp:TextBox ID="cnoTB" runat="server"></asp:TextBox>
+    <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+
+    </asp:RadioButtonList>
+
+<%--    <asp:Label ID="Label2" runat="server" Text="课程号:"></asp:Label>
+    <asp:TextBox ID="cnoTB" runat="server"></asp:TextBox>--%>
 
     <hr />
     <asp:Label ID="Label3" runat="server" Text="成绩:"></asp:Label>

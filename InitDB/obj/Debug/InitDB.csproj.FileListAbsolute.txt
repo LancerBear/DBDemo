@@ -1,5 +1,6 @@
 G:\VS\Projects\DBDemoo\InitDB\bin\Debug\InitDB.exe.config
 G:\VS\Projects\DBDemoo\InitDB\bin\Debug\InitDB.exe
 G:\VS\Projects\DBDemoo\InitDB\bin\Debug\InitDB.pdb
+G:\VS\Projects\DBDemoo\InitDB\obj\Debug\InitDB.csprojResolveAssemblyReference.cache
 G:\VS\Projects\DBDemoo\InitDB\obj\Debug\InitDB.exe
 G:\VS\Projects\DBDemoo\InitDB\obj\Debug\InitDB.pdb

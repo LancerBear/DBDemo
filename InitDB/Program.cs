@@ -20,6 +20,8 @@ namespace InitDB
 			string[] c = { "C语言", "C++", "JAVA", "数据结构", "计算机组成原理", "编译原理", "操作系统", "数据库原理", "嵌入式系统", "微机接口原理" };
 			double[] credit = { 2.0, 2.0, 2.0, 3.5, 3.0, 3.0, 3.5, 2.5, 1.0, 3.5 };
 			string cInit;
+			Random rd = new Random();
+			
 			for (int i = 1; i < 100000; i++)
 			{
 				string sid = i.ToString();
@@ -40,13 +42,19 @@ namespace InitDB
 				//Console.WriteLine(sInit);
 				//command = new MySqlCommand(sInit, connection);
 				//command.ExecuteNonQuery();
-				for (int j = 1; j <= 10; j++)
-				{
-					cInit = "insert into sc(sid, cno) values (\"" + i.ToString() + "\", \"" + j.ToString() + "\")";
-					command = new MySqlCommand(cInit, connection);
-					command.ExecuteNonQuery();
-					Console.WriteLine(cInit);
-				}
+				//for (int j = 1; j <= 10; j++)
+				//{
+				//	cInit = "insert into sc(sid, cno) values (\"" + i.ToString() + "\", \"" + j.ToString() + "\")";
+				//	command = new MySqlCommand(cInit, connection);
+				//	command.ExecuteNonQuery();
+				//	Console.WriteLine(cInit);
+				//}
+				int index = rd.Next(60, 100);
+				cInit = "insert into sc(sid, cno, grade) values (\"" + i.ToString() + "\", \"9\", " + index + ")";
+				Console.WriteLine(cInit);
+				command = new MySqlCommand(cInit, connection);
+				command.ExecuteNonQuery();
+				//Console.WriteLine(cInit);
 
 			}
 			//string[] c = { "C语言", "C++", "JAVA", "数据结构", "计算机组成原理", "编译原理", "操作系统", "数据库原理", "嵌入式系统", "微机接口原理" };

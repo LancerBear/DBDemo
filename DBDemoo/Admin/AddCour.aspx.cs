@@ -29,7 +29,14 @@ namespace DBDemo.Admin
 
 		protected void submitBt_Click(object sender, EventArgs e)
 		{
-			string cno = this.CnoTB.Text;
+			string cno;
+			string sql = "select max(cast(cno as signed)), cname, ccredit from c";
+			DBconnetor co = new DBconnetor(sql);
+			List<EntityBase> cnoList = co.getList(new EntityCour());
+			EntityCour c = (EntityCour)cnoList.ElementAt(0);
+			int maxCno = int.Parse(c.getCno());
+			maxCno++;
+			cno = maxCno.ToString();
 			string cname = this.CnameTB.Text;
 			float ccredit = float.Parse(this.CcreditTB.Text);
 			string sqlsen = "insert into c value (\"" + cno + "\", \"" + cname + "\", " + ccredit + ")";
