@@ -8,11 +8,12 @@ using System.Web.UI.WebControls;
 
 namespace DBDemo.Admin
 {
-	public partial class SetGrade : System.Web.UI.Page
+	public partial class SetGrade : PageBase
 	{
 		static List<EntityBase> list;
-		protected void Page_Load(object sender, EventArgs e)
+		protected override void Page_Load(object sender, EventArgs e)
 		{
+			base.Page_Load(sender, e);
 			Master.FindControl("AdminBar").Visible = true;
 			Master.FindControl("NavBar").Visible = false;
 		}
